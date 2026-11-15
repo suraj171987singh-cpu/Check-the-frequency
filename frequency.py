@@ -1,10 +1,13 @@
 
-test_dict = {'Codingal': 2 ,'is': 2 ,'best': 2 ,'for': 2,'coding': 1 }
-print("The original dictionary:" + str(test_dict))
-K = 2
+test_dict = {'Codingal': 3, 'is': 2, 'best': 2, 'for': 2, 'Coding': 1}
+print("The original dictionary : " + str(test_dict))
+
+# Ask the user to enter the value to check (converted to an integer)
+K = int(input("Enter the value you want to check the frequency for: "))
+
+# Initialize a counter variable
 res = 0
 for key in test_dict:
     if test_dict[key] == K:
-        res += 1
-print("Frequency of K is : " + str(res))
-
+        res = res + 1
+print("Frequency of", K, "is :", res)
